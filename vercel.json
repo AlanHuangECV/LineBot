@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "RichManu.py",
+            "src": "EmojiAndSticker.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
           "src": "/(.*)", 
-          "dest": "RichManu.py"
+          "dest": "EmojiAndSticker.py"
         }
     ]
 }
