@@ -22,9 +22,14 @@ from linebot.v3.webhooks import (
     MessageEvent,
     TextMessageContent,
 )
+
+import os
+
+
 app = Flask(__name__)
 
-configuration = Configuration(access_token = os.getenv("AccessToken"))
+AccessToken = os.getenv("AccessToken")
+configuration = Configuration(access_token = AccessToken)
 LineHandler = WebhookHandler(os.getenv("ChannelSecret"))
 
 
@@ -132,6 +137,6 @@ def handle_message(event):
                 )
             )
 
-# if __name__ == "__main__":
-#     app.run()
-app.run()
+if __name__ == "__main__":
+    app.run()
+# app.run()
