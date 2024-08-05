@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "EmojiAndSticker.py",
+            "src": "LineBotAzureTranslator.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
           "src": "/(.*)", 
-          "dest": "EmojiAndSticker.py"
+          "dest": "LineBotAzureTranslator.py"
         }
     ]
 }
